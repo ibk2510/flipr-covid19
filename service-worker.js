@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/flipr-covid19/precache-manifest.38ef9a54415dde3cb83007e69b890c59.js"
+  "/flipr-covid19/precache-manifest.0ac773194493bea901ecdfd2bc1e242a.js"
 );
 
 self.addEventListener('message', (event) => {
