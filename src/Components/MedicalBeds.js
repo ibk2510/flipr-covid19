@@ -38,6 +38,9 @@ class MedicalBeds extends Component {
     });
     return (
       <div className="container-fluid">
+      <div className="card shadow br ctr contactcard">
+      <h2>Medical Colleges & Beds</h2>
+      </div>
         <div className="card shadow">
           <div className="table-responsive">
             <Datatable

@@ -27,12 +27,26 @@
 }
 
 body{
-  background-image: url("./Assets/images/91649.jpg");
+  background-image: url("/images/91649.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* border radius */
 .br{
   border-radius: 15px; 
+}
+
+.icolor{
+  color: #005D7F;
+}
+
+.contactcard{
+  color: white;
+  background-color: #005D7F;
+}
+
+.input-group-append{
+  background-color: #005D7F;
 }

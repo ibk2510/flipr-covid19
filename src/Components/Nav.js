@@ -20,7 +20,7 @@ export default function Nav() {
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <Link className="nav-link" to="/">
                 Home
               </Link>

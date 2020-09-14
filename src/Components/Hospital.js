@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Datatable from "react-bs-datatable";
 
+
 class Hospital extends Component {
   constructor() {
     super();
@@ -39,13 +40,20 @@ class Hospital extends Component {
     });
     return (
       <div className="container-fluid">
+        <div className="card-body">
+          <div className="card shadow br ctr contactcard">
+            <h2>Hospitals & Beds</h2>
+          </div>
+        </div>
         <div className="card shadow">
-          <div className="table-responsive">
-            <Datatable
-              tableHeaders={this.headers}
-              tableBody={all_hospitals}
-              rowsPerPage={10}
-            />
+          <div className="card-body">
+            <div className="table-responsive">
+              <Datatable
+                tableHeaders={this.headers}
+                tableBody={all_hospitals}
+                rowsPerPage={10}
+              />
+            </div>
           </div>
         </div>
       </div>

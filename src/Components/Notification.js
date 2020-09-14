@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import Datatable from "react-bs-datatable";
 
+
+
 class Notification extends Component {
   constructor() {
     super();
@@ -32,11 +34,17 @@ class Notification extends Component {
       );
     }
     const all_notifiations = this.state.data.notifications.map((obj, index) => {
-      return { ...obj, id: index + 1 };
+      const link =(<a className="btn btn-primary" href={obj.link}>View</a>)
+      
+      return { ...obj, id: index + 1,link };
     });
     return (
       <div className="container">
+        <div className="card br shadow ctr contactcard">
+          <h1>Notifications & Advisories</h1>
+        </div>
         <div className="card shadow br">
+        <div className="card-body">
           <div className="table-responsive">
             <Datatable
               className="border"
@@ -44,6 +52,7 @@ class Notification extends Component {
               tableBody={all_notifiations}
               rowsPerPage={7}
             />
+          </div>
           </div>
         </div>
       </div>

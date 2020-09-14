@@ -21,35 +21,46 @@ class HospitalTabs extends Component {
     return (
       <Router>
         <div className="container-fluid">
+          <div className="card shadow br ctr contactcard">
+            <div className="card-body">
+              <h2>Hospital Dashboard</h2>
+            </div>
+          </div>
           <div className="card shadow br my-2">
-            <ul class="nav nav-tabs">
-              <li class="nav-item">
-                <Link
-                  onClick={this.toggleBox2}
-                  className={`nav-link ${this.state.isActive ? "" : "active"}`}
-                  to="/hospitals"
-                >
-                  Hospitals & beds
-                </Link>
-              </li>
-              <li class="nav-item">
-                <Link
-                  onClick={this.toggleBox1}
-                  className={`nav-link ${!this.state.isActive ? "" : "active"}`}
-                  to="/hospitals/medicalclgbeds"
-                >
-                  Medical Colleges & beds
-                </Link>
-              </li>
-            </ul>
-            <Switch>
-              <Route exact path="/hospitals" component={Hospital}></Route>
-              <Route
-                exact
-                path="/hospitals/medicalclgbeds"
-                component={MedicalBeds}
-              ></Route>
-            </Switch>
+            <div className="card-body">
+              <ul class="nav nav-tabs flex-sm-row">
+                <li class="nav-item">
+                  <Link
+                    onClick={this.toggleBox2}
+                    className={`nav-link ${
+                      this.state.isActive ? "" : "active"
+                    }`}
+                    to="/hospitals"
+                  >
+                    Hospitals & beds
+                  </Link>
+                </li>
+                <li class="nav-item">
+                  <Link
+                    onClick={this.toggleBox1}
+                    className={`nav-link ${
+                      !this.state.isActive ? "" : "active"
+                    }`}
+                    to="/hospitals/medicalclgbeds"
+                  >
+                    Medical Colleges & beds
+                  </Link>
+                </li>
+              </ul>
+              <Switch>
+                <Route exact path="/hospitals" component={Hospital}></Route>
+                <Route
+                  exact
+                  path="/hospitals/medicalclgbeds"
+                  component={MedicalBeds}
+                ></Route>
+              </Switch>
+            </div>
           </div>
         </div>
       </Router>
