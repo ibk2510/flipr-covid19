@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8806072dae8962c3986af6ef7c2a8bee",
+    "revision": "9674895b0516ae5422697d668fca7819",
     "url": "/flipr-covid19/index.html"
   },
   {
-    "revision": "b0cbdc29daafba3dad1a",
+    "revision": "bb65faea3d3d19286b69",
     "url": "/flipr-covid19/static/css/main.0af03bca.chunk.css"
   },
   {
-    "revision": "116f329bcbef24d54858",
-    "url": "/flipr-covid19/static/js/2.c914d93b.chunk.js"
+    "revision": "9883c9a46d42cb958fcb",
+    "url": "/flipr-covid19/static/js/2.aaf2ec71.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/flipr-covid19/static/js/2.c914d93b.chunk.js.LICENSE.txt"
+    "url": "/flipr-covid19/static/js/2.aaf2ec71.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b0cbdc29daafba3dad1a",
-    "url": "/flipr-covid19/static/js/main.2b5333af.chunk.js"
+    "revision": "bb65faea3d3d19286b69",
+    "url": "/flipr-covid19/static/js/main.2bdc11ba.chunk.js"
   },
   {
     "revision": "548f0a81ea715bc1b90b",
