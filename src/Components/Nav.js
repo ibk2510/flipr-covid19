@@ -3,7 +3,7 @@ import { Link, BrowserRouter as Router } from "react-router-dom";
 export default function Nav() {
   return (
     <div>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="/">
           COVID-19
         </a>

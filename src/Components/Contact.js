@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Datatable from "react-bs-datatable";
+import { FaEnvelope, FaTwitterSquare, FaFacebookSquare } from "react-icons/fa";
 
 class Contact extends Component {
   constructor() {
@@ -35,26 +36,42 @@ class Contact extends Component {
     });
     return (
       <div className="container">
-        <div className="card shadow ctr ">
+        <div className="card shadow ctr br">
           <div className="row">
             <div className="col-sm">
-              <h3>Contact Number</h3>
-              <h6>{this.state.data.primary.number}</h6>
+              <div className="card shadow br">
+                <h3>Contact Number</h3>
+                <h6>{this.state.data.primary.number}</h6>
+              </div>
             </div>
             <div className="col-sm">
-              <h3>Toll-Free Number</h3>
-              <h6>{this.state.data.primary["number-tollfree"]}</h6>
+              <div className="card shadow br">
+                <h4>Toll-Free Number</h4>
+                <h6>{this.state.data.primary["number-tollfree"]}</h6>
+              </div>
             </div>
           </div>
           <div className="row">
-            <div className="col-sm">email</div>
-            <div className="col-sm">twitter</div>
-            <div className="col-sm">fb</div>
+            <div className="col-sm">
+              <FaTwitterSquare />
+            </div>
+            <div className="col-sm">
+              <FaEnvelope />
+            </div>
+            <div className="col-sm">
+              <FaFacebookSquare />
+            </div>
           </div>
         </div>
-<div className="card shadow">
-<Datatable tableHeaders={this.headers} tableBody={all_states} rowsPerPage={10}/>
-</div>
+        <div className="card shadow br">
+          <div className="table-responsive mx-0 my-2">
+            <Datatable
+              tableHeaders={this.headers}
+              tableBody={all_states}
+              rowsPerPage={10}
+            />
+          </div>
+        </div>
       </div>
     );
   }
